@@ -1,0 +1,7 @@
+database.db
+V/
+*.jpg
+*.pdf
+scrapyard.py
+__pycache__/
+.DS_Store
