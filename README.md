@@ -118,11 +118,3 @@ static/outputs/
 ## License
 
 This project is open-source. Feel free to modify and distribute it.
-
-```md
-### Notes:
-
-1. Replace `<repository-url>` with the actual GitHub repository URL if applicable.
-2. The `.gitignore` section ensures temporary files and sensitive data are excluded.
-3. You can modify the "License" section based on your preferred license type.
-```
