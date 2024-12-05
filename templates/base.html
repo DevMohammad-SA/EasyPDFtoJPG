@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}EasyPDF to JPG{% endblock %}</title>
+    <!-- Styles: Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons: Heroicons -->
+    <script src="<script src="https://unpkg.com/heroicons@2.0.16/dist/24/outline.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition duration-300">EasyPDF to JPG</a>
+        </div>
+        <nav>
+          <ul class="flex space-x-4">
+            <li>
+              <a
+                href={{ url_for('home') }}
+                class="text-gray-700 hover:text-blue-600 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+               href={{ url_for('about') }}
+                class="text-gray-700 hover:text-blue-600 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href={{url_for('contact')}}
+                class="text-gray-700 hover:text-blue-600 transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md mt-8">
+      <div class="container mx-auto px-4 py-6 text-center">
+        <div class="flex justify-center space-x-4 mb-4">
+          <!-- Social Media Icons -->
+          <a
+            href="https://www.x.com/DevMohammad_SA"
+            class="text-gray-600 hover:text-blue-600 transition duration-300"
+            target="_blank"
+          >
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/devmohammad-sa"
+            class="text-gray-600 hover:text-blue-600 transition duration-300"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
+          <a
+            href="https://www.github.com/DevMohammad-SA"
+            class="text-gray-600 hover:text-blue-600 transition duration-300"
+            target="_blank"
+          >
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+        </div>
+        <p class="text-gray-500">
+          &copy; 2024 Mohammad Albuainain. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

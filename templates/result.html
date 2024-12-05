@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mx-auto px-4 py-8">
+  <div class="text-center mt-8">
+    <h1 class="text-2xl font-bold text-blue-600">
+      Your PDF Has Been Successfully Converted! 🎉
+    </h1>
+    <p class="mt-4 text-gray-700">
+      Click the "Download" button to save the converted image to your device.
+    </p>
+    <p class="mt-2 text-gray-700">
+      Want to convert another file? Use the "Go Back" link below to upload a new
+      PDF.
+    </p>
+  </div>
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <table class="w-full">
+      <thead class="bg-gray-100 border-b">
+        <tr>
+          <th class="p-4 text-left">Image Name</th>
+          <th class="p-4 text-left">Preview</th>
+          <th class="p-4 text-left">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for image_path in image_paths %}
+        <tr class="border-b hover:bg-gray-50 transition duration-200">
+          <td class="p-4">
+            {{ image_path.split('/')[-1].split('.')[0] }}.{{
+            image_path.split('.')[-1] }}
+          </td>
+          <td class="p-4">
+            <img
+              src="{{ url_for('static', filename=image_path) }}"
+              alt="Converted Image"
+              class="max-w-[100px] max-h-[100px] object-contain"
+            />
+          </td>
+          <td class="p-4">
+            <a
+              href="{{ url_for('static', filename=image_path) }}"
+              download="{{ image_path }}"
+              class="inline-block"
+            >
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Download
+              </button>
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-center mt-8">
+    <div class="mt-6">
+      <p class="text-sm text-gray-500 italic">
+        Note: The images are optimized for high quality. For better results,
+        upload a high-resolution PDF.
+      </p>
+      <p class="text-sm text-gray-500 italic">
+        Your feedback is valuable! If you encounter any issues, visit the
+        Contact page for support.
+      </p>
+    </div>
+    <a href="/" class="text-blue-500 hover:underline font-medium">Go Back</a>
+  </div>
+</div>
+{% endblock %}

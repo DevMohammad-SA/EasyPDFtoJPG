@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block content %}
+<form action="/submit" method="POST" class="space-y-4 max-w-lg mx-auto">
+  <div class="bg-white shadow-lg rounded-lg p-8">
+     <div class="flex flex-col ">
+    <label for="name" class="text-lg">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="contact_name"
+      required
+      class="p-2 border rounded-lg w-full"
+    />
+  </div>
+
+  <div class="flex flex-col">
+    <label for="email" class="text-lg">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="contact_email"
+      required
+      class="p-2 border rounded-lg w-full"
+    />
+  </div>
+
+  <div class="flex flex-col">
+    <label for="message" class="text-lg">Message</label>
+    <textarea
+      id="message"
+      name="contact_message"
+      rows="4"
+      required
+      class="p-2 border rounded-lg w-full"
+    ></textarea>
+  </div>
+  <br>
+ 
+
+  <button
+  type="submit"
+  class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 flex items-center justify-center space-x-2"
+   action={{url_for('proccess_contacts')}}
+>
+  <span>Send Message</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+</svg>
+</button>
+
+  
+</form>
+  </div>
+ 
+
+{% endblock content %}

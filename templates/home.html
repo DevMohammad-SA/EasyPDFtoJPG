@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block content %}
+
+<form action="/" method="POST" enctype="multipart/form-data">
+  <h2 class="text-lg font-semibold text-gray-700 text-center mt-4">
+    Fast and Easy PDF to JPG Conversion!
+  </h2>
+  <p class="text-sm text-gray-600 text-center mt-2">
+    Upload your PDF file and get high-quality JPG images in seconds.<br />No
+    downloads required, secure and fast.
+  </p>
+  <p class="text-center mt-6 text-lg font-semibold text-blue-600">
+    Ready to convert your PDFs? Upload your file now and get started!
+  </p>
+
+  <div
+    class="mx-auto w-1/2 bg-gray-200 p-4 rounded-full flex justify-between items-center"
+  >
+    <div>
+      <input
+        class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+        type="file"
+        name="pdf_files"
+        accept=".pdf"
+        multiple
+        required
+      />
+    </div>
+    <div>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center space-x-2"
+        type="submit"
+      >
+        <span>Upload </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15m0-3-3-3m0 0-3 3m3-3V15"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</form>
+<div class="mt-8">
+  <h3 class="text-center text-xl font-bold text-gray-800 mb-4">How It Works</h3>
+  <ol class="list-decimal list-inside text-gray-700 text-center">
+    <li>Select the PDF file you want to convert by clicking "Choose File".</li>
+    <li>Press the "Upload" button to start the conversion.</li>
+    <li>Download your JPG files instantly once the conversion is complete.</li>
+  </ol>
+</div>
+<p class="text-center text-sm text-gray-500 mt-12">
+  Need help? Contact me at
+  <a href="mailto:moh_dev@icloud.com" class="text-blue-500"
+    >moh_dev@icloud.com</a
+  >
+</p>
+
+{% endblock content %}
