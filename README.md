@@ -12,7 +12,22 @@ It also includes basic pages such as "About" and "Contact," with a contact form 
 
 ## Project Structure
 
-. ├── static/ │ ├── outputs/ # Folder for storing converted images │ └── uploads/ # Folder for storing uploaded PDF files ├── templates/ # HTML templates for the web pages │ ├── about.html │ ├── base.html │ ├── contact.html │ ├── duplicate.html │ ├── home.html │ ├── result.html │ └── submit.html ├── .gitignore # Specifies files/folders to be ignored by Git ├── app.py # Main Flask application file ├── database.db # SQLite database for contact form submissions └── requirements.txt # List of Python dependencies
+.
+├── static
+│ ├── outputs # Folder for storing converted images
+│ └── uploads # Folder for storing uploaded PDF files
+├── templates # HTML templates for the web pages
+│ ├── about.html
+│ ├── base.html
+│ ├── contact.html
+│ ├── duplicate.html
+│ ├── home.html
+│ ├── result.html
+│ └── submit.html
+├── .gitignore # Specifies files/folders to be ignored by Git
+├── app.py # Main Flask application file
+├── database.db # SQLite database for contact form submissions
+└── requirements.txt # List of Python dependencies
 
 ## Prerequisites
 
