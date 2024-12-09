@@ -2,14 +2,14 @@
 
 <form action="/" method="POST" enctype="multipart/form-data">
   <h2 class="text-lg font-semibold text-gray-700 text-center mt-4">
-    Fast and Easy PDF to JPG Conversion!
+    {{_('Fast and Easy PDF to JPG Conversion')}}
   </h2>
   <p class="text-sm text-gray-600 text-center mt-2">
-    Upload your PDF file and get high-quality JPG images in seconds.<br />No
-    downloads required, secure and fast.
+    {{_('Upload your PDF file and get high-quality JPG images in seconds')}}.<br />{{_('No
+    downloads required, secure and fast.')}}
   </p>
   <p class="text-center mt-6 text-lg font-semibold text-blue-600">
-    Ready to convert your PDFs? Upload your file now and get started!
+    {{_('Ready to convert your PDFs? Upload your file now and get started!')}}
   </p>
 
   <div
@@ -30,7 +30,7 @@
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center space-x-2"
         type="submit"
       >
-        <span>Upload </span>
+        <span> {{_('Upload')}} </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -50,15 +50,23 @@
   </div>
 </form>
 <div class="mt-8">
-  <h3 class="text-center text-xl font-bold text-gray-800 mb-4">How It Works</h3>
+  <h3 class="text-center text-xl font-bold text-gray-800 mb-4">
+    {{_('How It Works')}}
+  </h3>
   <ol class="list-decimal list-inside text-gray-700 text-center">
-    <li>Select the PDF file you want to convert by clicking "Choose File".</li>
-    <li>Press the "Upload" button to start the conversion.</li>
-    <li>Download your JPG files instantly once the conversion is complete.</li>
+    <li>
+      {{_('Select the PDF file you want to convert by clicking "Choose
+      File".')}}
+    </li>
+    <li>{{_('Press the "Upload" button to start the conversion.')}}</li>
+    <li>
+      {{_('Download your JPG files instantly once the conversion is
+      complete.')}}
+    </li>
   </ol>
 </div>
 <p class="text-center text-sm text-gray-500 mt-12">
-  Need help? Contact me at
+  {{_('Need help? Contact me at')}}
   <a href="mailto:moh_dev@icloud.com" class="text-blue-500"
     >moh_dev@icloud.com</a
   >

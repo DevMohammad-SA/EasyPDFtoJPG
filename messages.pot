@@ -1,0 +1,254 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-09 21:13+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: templates/about.html:4
+msgid "About EasyPDF to JPG"
+msgstr ""
+
+#: templates/about.html:7
+msgid "Welcome to"
+msgstr ""
+
+#: templates/about.html:9 templates/about.html:49
+msgid "PDF to JPG Converter"
+msgstr ""
+
+#: templates/about.html:10
+msgid ""
+"! Our goal is to provide a simple and efficient way for users to\n"
+"    convert their PDF documents into high-quality JPG images. Whether you"
+" need\n"
+"    to extract images from a report, share parts of a document, or simply"
+" save a\n"
+"    document as an image, we’ve got you covered."
+msgstr ""
+
+#: templates/about.html:17
+msgid "Our Mission:"
+msgstr ""
+
+#: templates/about.html:20
+msgid ""
+"We aim to make PDF to image conversion easy and accessible for\n"
+"    everyone. With just a few clicks, you can upload your PDF and get a "
+"set of\n"
+"    JPG images that can be shared, downloaded, or printed."
+msgstr ""
+
+#: templates/about.html:25
+msgid "Features"
+msgstr ""
+
+#: templates/about.html:28
+msgid "Multiple File Support:"
+msgstr ""
+
+#: templates/about.html:29
+msgid "Upload and convert multiple PDFs at once."
+msgstr ""
+
+#: templates/about.html:32
+msgid "High-Quality Images:"
+msgstr ""
+
+#: templates/about.html:32
+msgid ""
+" We\n"
+"      ensure that your images retain their original quality during\n"
+"      conversion."
+msgstr ""
+
+#: templates/about.html:37
+msgid "Free & Easy to Use:"
+msgstr ""
+
+#: templates/about.html:37
+msgid ""
+" Our\n"
+"      tool is completely free to use, with no sign-up required."
+msgstr ""
+
+#: templates/about.html:41
+msgid "Quick Conversion"
+msgstr ""
+
+#: templates/about.html:41
+msgid ""
+" Convert\n"
+"      your files within seconds."
+msgstr ""
+
+#: templates/about.html:47
+msgid "Thank you for choosing"
+msgstr ""
+
+#: templates/about.html:50
+msgid ""
+"! We are committed to offering you the best service and making your\n"
+"    PDF-to-image conversion needs as simple as possible."
+msgstr ""
+
+#: templates/base.html:32
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:39
+msgid "About"
+msgstr ""
+
+#: templates/base.html:46
+msgid "Contact"
+msgstr ""
+
+#: templates/contact.html:5
+msgid "Get in Touch"
+msgstr ""
+
+#: templates/contact.html:6
+msgid "Send me a message and I will get back to you as soon as possible"
+msgstr ""
+
+#: templates/contact.html:9
+msgid "Name"
+msgstr ""
+
+#: templates/contact.html:20
+msgid "Email"
+msgstr ""
+
+#: templates/contact.html:31
+msgid "Message"
+msgstr ""
+
+#: templates/contact.html:48
+msgid "Send Message"
+msgstr ""
+
+#: templates/dublicate.html:3
+msgid "You already sent a message. It will be reviewed soon."
+msgstr ""
+
+#: templates/home.html:5
+msgid "Fast and Easy PDF to JPG Conversion"
+msgstr ""
+
+#: templates/home.html:8
+msgid "Upload your PDF file and get high-quality JPG images in seconds"
+msgstr ""
+
+#: templates/home.html:8
+msgid ""
+"No\n"
+"    downloads required, secure and fast."
+msgstr ""
+
+#: templates/home.html:12
+msgid "Ready to convert your PDFs? Upload your file now and get started!"
+msgstr ""
+
+#: templates/home.html:33
+msgid "Upload"
+msgstr ""
+
+#: templates/home.html:54
+msgid "How It Works"
+msgstr ""
+
+#: templates/home.html:58
+msgid ""
+"Select the PDF file you want to convert by clicking \"Choose\n"
+"      File\"."
+msgstr ""
+
+#: templates/home.html:61
+msgid "Press the \"Upload\" button to start the conversion."
+msgstr ""
+
+#: templates/home.html:63
+msgid ""
+"Download your JPG files instantly once the conversion is\n"
+"      complete."
+msgstr ""
+
+#: templates/home.html:69
+msgid "Need help? Contact me at"
+msgstr ""
+
+#: templates/result.html:5
+msgid "Your PDF Has Been Successfully Converted! 🎉"
+msgstr ""
+
+#: templates/result.html:8
+msgid ""
+" Click the \"Download\" button to save the converted image to your\n"
+"      device."
+msgstr ""
+
+#: templates/result.html:12
+msgid ""
+" Want to convert another file? Use the \"Go Back\" link below to upload\n"
+"      a new PDF."
+msgstr ""
+
+#: templates/result.html:21
+msgid "Image Name"
+msgstr ""
+
+#: templates/result.html:22
+msgid "Preview"
+msgstr ""
+
+#: templates/result.html:23
+msgid "Actions"
+msgstr ""
+
+#: templates/result.html:49
+msgid "Download"
+msgstr ""
+
+#: templates/result.html:62
+msgid ""
+" Note: The images are optimized for high quality. For better\n"
+"        results, upload a high-resolution PDF."
+msgstr ""
+
+#: templates/result.html:66
+msgid ""
+"Your feedback is valuable! If you encounter any issues, visit the\n"
+"        Contact page for support."
+msgstr ""
+
+#: templates/result.html:71
+msgid "Go Back"
+msgstr ""
+
+#: templates/submit.html:8
+msgid "Message Sent Successfully! 🎉"
+msgstr ""
+
+#: templates/submit.html:11
+msgid ""
+"Thank you for your feedback. We appreciate you taking the time to\n"
+"      help us improve!"
+msgstr ""
+
+#: templates/submit.html:18
+msgid "Return to Home"
+msgstr ""
+

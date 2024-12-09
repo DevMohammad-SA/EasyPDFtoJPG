@@ -2,14 +2,15 @@
 <div class="container mx-auto px-4 py-8">
   <div class="text-center mt-8">
     <h1 class="text-2xl font-bold text-blue-600">
-      Your PDF Has Been Successfully Converted! 🎉
+      {{_('Your PDF Has Been Successfully Converted! 🎉')}}
     </h1>
     <p class="mt-4 text-gray-700">
-      Click the "Download" button to save the converted image to your device.
+      {{_(' Click the "Download" button to save the converted image to your
+      device.')}}
     </p>
     <p class="mt-2 text-gray-700">
-      Want to convert another file? Use the "Go Back" link below to upload a new
-      PDF.
+      {{_(' Want to convert another file? Use the "Go Back" link below to upload
+      a new PDF.')}}
     </p>
   </div>
 
@@ -17,9 +18,9 @@
     <table class="w-full">
       <thead class="bg-gray-100 border-b">
         <tr>
-          <th class="p-4 text-left">Image Name</th>
-          <th class="p-4 text-left">Preview</th>
-          <th class="p-4 text-left">Actions</th>
+          <th class="p-4 text-left">{{_('Image Name')}}</th>
+          <th class="p-4 text-left">{{_('Preview')}}</th>
+          <th class="p-4 text-left">{{_('Actions')}}</th>
         </tr>
       </thead>
       <tbody>
@@ -45,7 +46,7 @@
               <button
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
               >
-                Download
+                {{_('Download')}}
               </button>
             </a>
           </td>
@@ -58,15 +59,17 @@
   <div class="text-center mt-8">
     <div class="mt-6">
       <p class="text-sm text-gray-500 italic">
-        Note: The images are optimized for high quality. For better results,
-        upload a high-resolution PDF.
+        {{_(' Note: The images are optimized for high quality. For better
+        results, upload a high-resolution PDF.')}}
       </p>
       <p class="text-sm text-gray-500 italic">
-        Your feedback is valuable! If you encounter any issues, visit the
-        Contact page for support.
+        {{_('Your feedback is valuable! If you encounter any issues, visit the
+        Contact page for support.')}}
       </p>
     </div>
-    <a href="/" class="text-blue-500 hover:underline font-medium">Go Back</a>
+    <a href="/" class="text-blue-500 hover:underline font-medium"
+      >{{_('Go Back')}}</a
+    >
   </div>
 </div>
 {% endblock %}
